@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+* { box-sizing: border-box;}
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:white;
+    min-height: 100vh;
+    background-image: url(bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+}
+main {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 87.2%;
+    grid-gap: 0px;
+    align-content: start;
+    padding: 0;
+    justify-content: center;
+    align-items: center; 
+    justify-items: center;
+}
+section:first-of-type {
+    color: white;
+    text-align: center;
+    max-width: 600px;
+}
+h1 {
+    position: relative;
+    display: block;
+    width: 75%;
+    margin: 88px auto 24px auto;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 129.523%; /* 36.266px */
+    letter-spacing: -0.28px;
+
+    animation-name: textanime;
+    animation-duration: 2s;
+}
+
+@keyframes textanime {
+    0% {top:-200px; color: transparent;}
+    100% {top:0px; color: white;}
+    }
+
+.seehow {
+    display: block;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 450px;
+    margin-inline: auto;
+
+    animation-name: panime;
+    animation-duration: 3s;
+}
+@keyframes panime {
+    0% {color: transparent;}
+    100% {color: white;}
+    }
+
+section:last-of-type {
+    text-align: center;  
+    max-width: 600px; 
+}
+h2 {
+    display: block;
+    font-size: 15px;
+    color: white;
+    background-color: hsl(247, 32%, 48%);
+    font-weight: 400;
+    padding: 24px 75px;
+    border-radius: 0.5em;
+    margin: 40px auto 24px auto;
+    box-shadow: 0px 8px hsl(249, 10%, 26%, 30%);
+
+animation-name: h2anime;
+animation-duration: 3s;
+}
+@keyframes h2anime {
+    0% {color: transparent; transform: scale(0.7);}
+    100% {color: white; transform: scale(1);}
+    }
+
+form {
+    background-color: white;
+    box-shadow: 0px 8px hsl(249, 10%, 26%, 30%);
+    border-radius: 0.5em;
+    padding: 7%;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 16px;
+    row-gap: 0;
+    border: 0;
+
+    animation-name: formanime;
+    animation-duration: 3s;
+    }
+    @keyframes formanime {
+        0% {transform: scale(0.7);}
+        100% {transform: scale(1);}
+        }
+
+input {
+    width: 100%;
+    height: 56px;
+    border-radius: 0.5em;
+    border: 2px solid hsl(249, 10%, 26%, 20%);
+    font-family: inherit;
+    padding-left: 16px;
+    font-weight: 600;
+}
+
+.textError {
+    visibility: hidden;
+   display: hidden;
+    color:hsl(0, 100%, 74%);
+    font-family: inherit;
+    font-size: 10px;
+    font-style: italic;
+    margin: 0 0 -16px auto;
+   text-align: right;
+}
+
+.errorCircle {
+    visibility: hidden;
+    z-index: 2;
+    position: relative;
+    bottom:38px;
+    right: -35%;
+}
+.errorCirclelast {
+    bottom:68px;    
+}
+
+button {
+    display: block;
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    border-radius: 0.5em;
+    height: 56px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: 0px -4px hsl(249, 10%, 26%, 30%) inset, 0px 3px 1px hsl(249, 10%, 26%, 30%);
+    cursor: pointer;
+    position: relative;
+}
+button:link {}
+button:visited {}
+button:hover {background-color: hsl(153, 59%, 60%);}
+button:active {height: 52px; box-shadow: 0px 3px 1px hsl(249, 10%, 26%, 30%); top:4px; margin-top: 4px;}
+.agree {
+    color: hsl(249, 10%, 26%, 50%);
+    font-size: 12px;
+    font-weight: 500;
+} 
+span {color: hsl(0, 100%, 74%);
+cursor: pointer;
+font-weight: 600;}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: url(bg-intro-desktop.png);
+    }
+    main {
+        grid-template-columns: 44.746% 55.254%;
+        align-content: center;
+        max-width: 1200px;
+        margin: 0.5%;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 110.523%; 
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+    }
+    .seehow {text-align: left;
+        max-width: 600px;
+        letter-spacing: -0.4px;
+    }
+
+    section:last-of-type {
+        max-width: 650px;
+        width: 90%;}
+}
+
+@media screen and (max-width: 374px) {
+    h2 {padding: 7% 22%;}
+    h1 {width: 85%;}
+}
+@media screen and (min-width: 491px) {
+    .errorCirclelast {
+        bottom:54px;    
+    }
+ }
+
+@media screen and (min-width: 800px) and (max-width:1199px) {
+    body {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: url(bg-intro-desktop.png);
+        grid-template-columns: 95%;
+    }
+main {max-width: 1100px;}
+.seehow {max-width: 1100px; width: 100%;}
+    form {     
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto;
+        max-width: none;
+}
+button {
+    grid-column: 1/span 2; 
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-inline: auto;
+    margin-top: 16px;}
+.agree {grid-column: 1/span 2;}
+section:first-of-type {max-width: 1000px; width: 90%;}
+section:last-of-type {max-width: 1000px; width: 90%;}
+
+.errorCirclelast {bottom:68px;}
+}
+@media screen and (min-width: 1113px) and (max-width:1199px) {
+    .errorCirclelast {bottom:54px;} }

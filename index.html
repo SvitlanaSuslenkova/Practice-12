@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main>
+<section>
+  <h1>Learn to code by watching others</h1>
+
+  <p class="seehow">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable.</p>
+</section>
+<section>
+  <h2><b>Try it free 7 days</b> then $20/mo. thereafter</h2>
+<form name="form1" action="#">
+<div>
+  <input type="text" id="fname" name="firstname" placeholder="First Name">
+  <p class="textError">First Name cannot be empty or to be a number</p>
+  <img class="errorCircle" src="icon-error.svg" alt="">
+</div>
+
+<div>
+  <input type="text" id="lname" name="lastname" placeholder="Last Name">
+  <p class="textError">Last Name cannot be empty or to be a number</p>
+  <img class="errorCircle" src="icon-error.svg" alt="">
+</div>
+
+<div>
+  <input type="email" id="email" name="email" placeholder="Email Address">
+  <p class="textError">Looks like this is not an email</p>
+  <img class="errorCircle" src="icon-error.svg" alt="">
+</div> 
+
+<div>
+  <input type="password" id="pwd" name="pwd" placeholder="Password">
+  <p class="textError">Password cannot be empty</p>
+  <img class="errorCircle errorCirclelast" src="icon-error.svg" alt="">
+</div>  
+
+  <button>Claim your free trial</button>
+
+  <p class="agree">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+</form>
+
+</section> 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </main>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
